@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/poll_id_menu_item"
+        android:title="Poll Id"/>
+
+    <item
+        android:id="@+id/follow_author_menu_item"
+        android:title="Follow Author"/>
+</menu>

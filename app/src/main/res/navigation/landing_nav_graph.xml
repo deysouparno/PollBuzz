@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landind_nav_graph"
+    app:startDestination="@id/landingFragment">
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.landing.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_authorProfileFragment"
+            app:destination="@id/authorProfileFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_filterAndSearchFragment"
+            app:destination="@id/filterAndSearchFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_authActivity"
+            app:destination="@id/authActivity" />
+        <action
+            android:id="@+id/action_landingFragment_to_createPollActivity"
+            app:destination="@id/createPollActivity" />
+        <action
+            android:id="@+id/action_landingFragment_to_voteTextPollFragment"
+            app:destination="@id/voteTextPollFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_voteImagePollFragment"
+            app:destination="@id/voteImagePollFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_resultTextPollFragment"
+            app:destination="@id/resultTextPollFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_resultImagePollFragment"
+            app:destination="@id/resultImagePollFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_deepLinkHelperFragment"
+            app:destination="@id/deepLinkHelperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorProfileFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.landing.AuthorProfileFragment"
+        android:label="fragment_author_profile"
+        tools:layout="@layout/fragment_author_profile" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterAndSearchFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.landing.FilterAndSearchFragment"
+        android:label="fragment_filter_and_search"
+        tools:layout="@layout/fragment_filter_and_search" >
+        <argument
+            android:name="code"
+            app:argType="integer" />
+    </fragment>
+    <activity
+        android:id="@+id/authActivity"
+        android:name="com.triceriasolutions.pollbuzz.ui.auth.AuthActivity"
+        android:label="activity_auth"
+        tools:layout="@layout/activity_auth" />
+    <activity
+        android:id="@+id/createPollActivity"
+        android:name="com.triceriasolutions.pollbuzz.ui.createPoll.CreatePollActivity"
+        android:label="activity_create_poll"
+        tools:layout="@layout/activity_create_poll" />
+    <fragment
+        android:id="@+id/voteTextPollFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.vote.VoteTextPollFragment"
+        android:label="fragment_vote_text_poll"
+        tools:layout="@layout/fragment_vote_text_poll" >
+        <action
+            android:id="@+id/action_voteTextPollFragment_to_resultTextPollFragment"
+            app:destination="@id/resultTextPollFragment"
+            app:popUpTo="@id/voteTextPollFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="poll"
+            app:argType="com.triceriasolutions.pollbuzz.data.models.Poll" />
+    </fragment>
+    <fragment
+        android:id="@+id/voteImagePollFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.vote.VoteImagePollFragment"
+        android:label="fragment_vote_image_poll"
+        tools:layout="@layout/fragment_vote_image_poll" >
+        <action
+            android:id="@+id/action_voteImagePollFragment_to_resultImagePollFragment"
+            app:destination="@id/resultImagePollFragment"
+            app:popUpTo="@id/voteImagePollFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="poll"
+            app:argType="com.triceriasolutions.pollbuzz.data.models.Poll" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultTextPollFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.vote.ResultTextPollFragment"
+        android:label="fragment_result_text_poll"
+        tools:layout="@layout/fragment_result_text_poll" >
+        <argument
+            android:name="poll"
+            app:argType="com.triceriasolutions.pollbuzz.data.models.Poll" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultImagePollFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.vote.ResultImagePollFragment"
+        android:label="fragment_result_image_poll"
+        tools:layout="@layout/fragment_result_image_poll" >
+        <argument
+            android:name="poll"
+            app:argType="com.triceriasolutions.pollbuzz.data.models.Poll" />
+    </fragment>
+    <fragment
+        android:id="@+id/deepLinkHelperFragment"
+        android:name="com.triceriasolutions.pollbuzz.ui.landing.DeepLinkHelperFragment"
+        android:label="fragment_deep_link_helper"
+        tools:layout="@layout/fragment_deep_link_helper">
+        <action
+            android:id="@+id/action_deepLinkHelperFragment_to_voteTextPollFragment"
+            app:destination="@id/voteTextPollFragment"
+            app:popUpTo="@id/deepLinkHelperFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_deepLinkHelperFragment_to_resultTextPollFragment"
+            app:destination="@id/resultTextPollFragment"
+            app:popUpTo="@id/deepLinkHelperFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_deepLinkHelperFragment_to_resultImagePollFragment"
+            app:destination="@id/resultImagePollFragment"
+            app:popUpTo="@id/deepLinkHelperFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_deepLinkHelperFragment_to_voteImagePollFragment"
+            app:destination="@id/voteImagePollFragment"
+            app:popUpTo="@id/deepLinkHelperFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="pollId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.pollbuzz.com/poll" />
+    </fragment>
+</navigation>

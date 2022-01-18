@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/audiowide</item>
+        <item>@font/bungee_outline</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/ceviche_one</item>
+        <item>@font/didact_gothic</item>
+        <item>@font/fascinate_inline</item>
+        <item>@font/fredericka_the_great</item>
+        <item>@font/lobster_two_bold_italic</item>
+        <item>@font/maven_pro</item>
+        <item>@font/oleo_script_swash_caps</item>
+        <item>@font/pacifico</item>
+        <item>@font/roboto</item>
+    </array>
+</resources>

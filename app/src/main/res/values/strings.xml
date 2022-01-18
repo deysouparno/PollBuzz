@@ -1,0 +1,25 @@
+<resources>
+
+
+    <string name="poll_title"><u>Poll Title</u></string>
+    <string name="home_feed_title">Polls</string>
+
+    <string name="default_notification_channel_id">PollBuzz</string>
+    <string name="app_name">PollBuzz</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="already_have_an_account_login">Already have an account? <u>Login</u></string>
+    <string name="create_an_account"><u>Create an account</u></string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+
+</resources>
