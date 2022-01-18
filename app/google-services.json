@@ -1,49 +1,41 @@
 {
   "project_info": {
-    "project_number": "870823966992",
-    "project_id": "pollbuzz-kotlin",
-    "storage_bucket": "pollbuzz-kotlin.appspot.com"
+    "project_number": "128574351065",
+    "project_id": "pollbuzz-255ca",
+    "storage_bucket": "pollbuzz-255ca.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:870823966992:android:b27e0e77ba19c931bfcd95",
+        "mobilesdk_app_id": "1:128574351065:android:cb17d8f319c3e190af40c8",
         "android_client_info": {
-          "package_name": "com.triceriasolutions.pollbuzz"
+          "package_name": "com.example.pollbuzz"
         }
       },
       "oauth_client": [
         {
-          "client_id": "870823966992-01cc3sictp5ho7spbvfgjqo0aqkafbko.apps.googleusercontent.com",
+          "client_id": "128574351065-676frg6ddm7qkb9h46n3dbuhnoc9npsf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.triceriasolutions.pollbuzz",
+            "package_name": "com.example.pollbuzz",
             "certificate_hash": "5e50b1f7701ac3cc2a7fc7030e1390b5ffde4b10"
           }
         },
         {
-          "client_id": "870823966992-jjuc9mgp4o7efddl2778mr1v0sditu8j.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.triceriasolutions.pollbuzz",
-            "certificate_hash": "a2771c4ee4b2c328b7e30ac85d21c644f3cfd4c7"
-          }
-        },
-        {
-          "client_id": "870823966992-k79ccskftekt0c6cc9o4etd17en6rc0k.apps.googleusercontent.com",
+          "client_id": "128574351065-85r71lj3dhirevatpvotutmlalqnnt3k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJasLtmOpFvQm4KWIYBxAUY-M0xBYWiqk"
+          "current_key": "AIzaSyDTJC-mlFie4PVGlu4_3xIsNgwCtKuV_2M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "870823966992-k79ccskftekt0c6cc9o4etd17en6rc0k.apps.googleusercontent.com",
+              "client_id": "128574351065-85r71lj3dhirevatpvotutmlalqnnt3k.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
